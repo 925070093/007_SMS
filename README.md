@@ -6,5 +6,7 @@
 5.运行[mount -o rw,remount /]解除系统文件写入保护，运行[cp /home/user/start.sh /etc/init.d/start.sh]把启动脚本复制到init.d文件夹下  
 6.运行[ln -s /etc/init.d/start.sh /etc/rcS.d/S96start.sh]把启动脚本加入到开机自启项目  
 7.重启程序自动运行，此后重启007+程序都会重新自动运行  
-
-Note：不想使用只需运行[rm -rf /etc/rcS.d/S96start.sh]把开机自启关闭后重启即可
+  
+Note：  
+1.不想使用只需运行[rm -rf /etc/rcS.d/S96start.sh]把开机自启关闭后重启即可  
+2.为什么不编译好程序？因为懒得写读写配置的代码，超密和QQ因人而异，自己动手吧
